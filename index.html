@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miguel Alonso | Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="nav">
+        <h1 class="logo">
+          <!-- mig<span class="color1">alo37</span> -->
+          mig<span class="color1">Alons</span>
+        </h1>
+
+        <ul class="nav-links">
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+
+        <div class="hero-text">
+          <h2>Hola, soy <span>Miguel Alonso</span></h2>
+
+          <p class="hero-subtitle">
+            Desarrollador de Software enfocado en crear aplicaciones reales,
+            escalables y bien diseñadas
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn">Ver proyectos</a>
+            <a href="assets/CV_Miguel_Alonso.pdf" class="btn btn-outline" download>
+              Descargar CV
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/migalo47" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/miguel-alonso-garc%C3%ADa-b35bba36a/" target="_blank">LinkedIn</a>
+          </div>
+
+        </div>
+
+        <div class="hero-image">
+          <img src="assets/images/yo.jpg" alt="Miguel Alonso">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <h3>Sobre mí</h3>
+
+      <p>
+        Soy un profesional del desarrollo de software motivado por la innovación
+        y el aprendizaje constante. Me dedico a construir aplicaciones
+        funcionales, eficientes y centradas en la experiencia del usuario.
+      </p>
+
+      <p>
+        Con experiencia en distintos lenguajes, frameworks modernos y
+        arquitecturas backend, me adapto rápidamente a nuevos entornos y aporto
+        soluciones sólidas en proyectos tecnológicos reales.
+      </p>
+
+      <ul class="skills">
+        <li><i class="devicon-java-plain colored"></i><span>Java</span></li>
+        <li><i class="devicon-python-plain colored"></i><span>Python</span></li>
+        <li><i class="devicon-c-plain colored"></i><span>C</span></li>
+        <li><i class="devicon-spring-plain colored"></i><span>Spring Boot</span></li>
+        <li><i class="devicon-react-original colored"></i><span>React</span></li>
+        <li><i class="devicon-angularjs-plain colored"></i><span>Angular</span></li>
+        <li><i class="devicon-flutter-plain colored"></i><span>Flutter</span></li>
+        <li><i class="devicon-mysql-plain colored"></i><span>MySQL</span></li>
+        <li><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></li>
+        <li><i class="devicon-git-plain colored"></i><span>Git</span></li>
+        <li><i class="devicon-docker-plain colored"></i><span>Docker</span></li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <h3>Proyectos</h3>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <img src="assets/images/cowpro.png" alt="CowPro">
+          <h4>CowPro</h4>
+          <p>
+            Aplicación multiplataforma de reservas y control de accesos mediante
+            cerraduras inteligentes, desarrollada con Flutter, Spring Boot y
+            arquitectura dockerizada.
+          </p>
+          <a href="https://github.com/migalo47/CowPro" class="btn" target="_blank">
+            Ver proyecto
+          </a>
+          <a href="https://campusfp.es/noticias/miguel-alonso-estudiar-aprobar-estudiar-construir/"
+             class="news-link" target="_blank">
+            Leer noticia
+          </a>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/images/flowtask.png" alt="FlowTask - Proyecto en desarrollo">
+          <h4>FlowTask</h4>
+          <p>
+            API REST para la gestión personal de tareas, desarrollada con Spring Boot y
+            autenticación JWT. Proyecto enfocado en consolidar buenas prácticas de
+            backend.
+          </p>
+          <a class="btn btn-disabled" aria-disabled="true">
+            🚧 En progreso
+          </a>
+        </article>
+
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="contact-box">
+
+        <div class="contact-left">
+          <span class="contact-badge">CONTACTO</span>
+          <h3>¿Tienes un proyecto en mente?</h3>
+          <p>
+            Si tienes una idea, un proyecto o simplemente quieres hablar,
+            estaré encantado de escucharte y ver cómo puedo ayudarte.
+          </p>
+
+          <div class="contact-info">
+            <div>
+              <strong>Email</strong>
+              <span>miguelalonsogarc@gmail.com</span>
+            </div>
+            <div>
+              <strong>Ubicación</strong>
+              <span>Madrid, España</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form action="https://formspree.io/f/xreaboyr" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu email" required>
+            <textarea name="message" rows="4" placeholder="Tu mensaje" required></textarea>
+            <button type="submit" class="contact-btn">Enviar mensaje →</button>
+          </form>
+
+          <span class="contact-note">
+            Respondo normalmente en menos de 24h
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+
+        <div class="footer-brand">
+          <h4>mig<span>Alons</span></h4>
+          <p>
+            Desarrollador de software especializado en aplicaciones modernas,
+            escalables y orientadas al usuario.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <strong>Navegación</strong>
+          <ul>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-socials">
+          <strong>Encuéntrame</strong>
+          <ul>
+            <li><a href="https://github.com/migalo47" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/miguel-alonso-garc%C3%ADa-b35bba36a/" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:miguelalonsogarc@gmail.com">Email</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Miguel Alonso García</span>
+        <span>Diseñado y desarrollado por mí</span>
+      </div>
+    </footer>
+
+  </body>
+</html>
