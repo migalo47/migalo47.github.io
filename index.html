@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
@@ -20,9 +19,15 @@
     <header class="header">
       <nav class="nav">
         <h1 class="logo">
-          <!-- mig<span class="color1">alo37</span> -->
           mig<span class="color1">Alons</span>
         </h1>
+
+        <!-- MENU HAMBURGUESA -->
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
         <ul class="nav-links">
           <li><a href="#about">Sobre mí</a></li>
@@ -120,18 +125,16 @@
         </article>
 
         <article class="project-card">
-          <img src="assets/images/flowtasklogo.png" alt="FlowTask - Proyecto en desarrollo">
+          <img src="assets/images/flowtasklogo.png" alt="FlowTask">
           <h4>FlowTask</h4>
           <p>
             API REST para la gestión personal de tareas, desarrollada con Spring Boot y
-            autenticación JWT. Proyecto enfocado en consolidar buenas prácticas de
-            backend.
+            autenticación JWT.
           </p>
           <a href="https://github.com/migalo47/flowtask" class="btn" target="_blank">
             Ver proyecto
           </a>
         </article>
-
 
       </div>
     </section>
@@ -213,6 +216,22 @@
         <span>Diseñado y desarrollado por mí</span>
       </div>
     </footer>
+
+    <!-- JS MENU -->
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+        });
+      });
+    </script>
 
   </body>
 </html>
